@@ -15,7 +15,25 @@
             <option value="26000">Trà Sữa</option>
             <option value="28000">Trà Đào</option>
             <option value="25000">Nước Cam</option>
-        </select><br/>
+        </select>
+        <div ng-switch="menu">
+            <div ng-switch-when="27000">
+               <h1>Coffee</h1>
+               <p>Giá tiền : 27000</p>
+            </div>
+            <div ng-switch-when="26000">
+               <h1>Trà Sữa</h1>
+               <p>Giá tiền : 26000</p>
+            </div>
+            <div ng-switch-when="28000">
+               <h1>Trà Đào</h1>
+               <p>Giá tiền : 28000</p>
+            </div>
+            <div ng-switch-when="25000">
+                <h1>Nước Cam</h1>
+                <p>Giá tiền : 25000</p>
+             </div>
+          </div><br/>
         <br/>
         Nhập số lượng :
         <input type="number" ng-model="exp" id="exp" name="exp" required min="0"><br />
