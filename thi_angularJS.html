@@ -6,8 +6,9 @@
     <title>exam</title>
     <script src="angular.min.js"></script>
 </head>
-<h1>IT Caffee</h1>
-<div ng-app="myApp" ng-controller="myCtrl">
+<h1 style="text-align: center;">IT Caffee</h1>
+<br/>
+<div ng-app="myApp" ng-controller="myCtrl" style="margin-left: 5%;font-size: 20px;">
     <form name="myForm">
         <span>Chọn đồ uống</span>
         <select name="cars" ng-model="menu" id="menu">
@@ -18,26 +19,26 @@
         </select>
         <div ng-switch="menu">
             <div ng-switch-when="27000">
-               <h1>Coffee</h1>
-               <p>Giá tiền : 27000</p>
+                <h1>Coffee</h1>
+                <p>Giá tiền : 27000 VND</p>
             </div>
             <div ng-switch-when="26000">
-               <h1>Trà Sữa</h1>
-               <p>Giá tiền : 26000</p>
+                <h1>Trà Sữa</h1>
+                <p>Giá tiền : 26000 VND</p>
             </div>
             <div ng-switch-when="28000">
-               <h1>Trà Đào</h1>
-               <p>Giá tiền : 28000</p>
+                <h1>Trà Đào</h1>
+                <p>Giá tiền : 28000 VND</p>
             </div>
             <div ng-switch-when="25000">
                 <h1>Nước Cam</h1>
-                <p>Giá tiền : 25000</p>
-             </div>
-          </div><br/>
-        <br/>
+                <p>Giá tiền : 25000 VND</p>
+            </div>
+        </div><br />
+        <br />
         Nhập số lượng :
         <input type="number" ng-model="exp" id="exp" name="exp" required min="0"><br />
-        <br/>
+        <br />
         Size
         <select ng-model="size">
             <option value="1">M</option>
